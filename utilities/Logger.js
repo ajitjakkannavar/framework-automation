@@ -22,6 +22,9 @@ class Logger {
         const timestamp = new Date().toLocaleString()
         console.log(`[DEBUG] [${timestamp} ${message}]`)
     }
+    testStart(message) {
+        console.log(`[TEST STARTED] ${message}`);
+    }
 
 }
 module.exports = Logger;
